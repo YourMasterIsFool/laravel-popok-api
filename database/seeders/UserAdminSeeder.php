@@ -15,12 +15,17 @@ class UserAdminSeeder extends Seeder
     public function run(): void
     {
         //
-        $createdAdminUser = new User();
-        $createdAdminUser->name = 'Verrandy Bagus';
-        $createdAdminUser->email = 'verrandyb@gmail.com';
-        $createdAdminUser->password = Hash::make('testing123');
-        $createdAdminUser->role_id = 1;
 
-        $createdAdminUser->save();
+        $findUser = User::where('email' , 'verrandyb@gmail.com')->first();
+        if(is_null($findUser)) {
+            $createdAdminUser = new User();
+            $createdAdminUser->name = 'Verrandy Bagus';
+            $createdAdminUser->email = 'verrandyb@gmail.com';
+            $createdAdminUser->password = Hash::make('testing123');
+            $createdAdminUser->role_id = 1;
+
+            $createdAdminUser->save();
+        }
+    
      }
 }
