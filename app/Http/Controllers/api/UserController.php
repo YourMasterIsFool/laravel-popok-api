@@ -49,11 +49,11 @@ class UserController extends Controller
         $rules['password'] =  'required';
         $rules['email'] = 'required|email';
         $rules['name'] = 'required';
-        $rules['jenis_kelamin'] =  'required';
         
-        if(is_null($request->role)) {
+        if($request->role == 3) {
             $rules['question_id'] ='required';
             $rules['question_answer'] ='required';
+            $rules['jenis_kelamin'] =  'required';
         }
        
 
@@ -86,6 +86,8 @@ class UserController extends Controller
         $createdUser->role_id = 3;
         $createdUser->question_id = $request->question_id;
         $createdUser->question_answer = $request->question_answer;
+    
+
         }
         $createdUser->save();
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Pelatihan;
 use App\Models\PelatihanCustomerModel;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -12,14 +13,55 @@ class PelatihanController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
         //
         $context['data'] =  Pelatihan::query();
+    //    return response()->ok($request->get('status'));
+        if(auth()->user()->isRole('user')) {
+            $context['data'] = $context['data']->with('isMember');
+        }
 
-        // if(auth()->user()->isRole('user')) {
-        //     $context['data'] = $context['data']->isMember(auth()->user()->id);
-        // }
+        if($request->get('status')) {
+            switch($request->get('status')) {
+                case 'ditolak':
+                    $context['data'] = $context['data']->whereHas("isMember", function($q) {
+                        $q->where('acc', 2);
+                    });
+
+                    break;
+                    
+                case "sudah join":
+                    $context['data'] = $context['data']->whereHas("isMember", function ($q) {
+                        $q->where('acc', 1);
+                    });
+
+                    break;
+                
+
+                case "belum join":
+                    $context['data'] = $context['data']->doesntHave('isMember');
+                    $context['data'] = $context['data']->whereDate('tanggal_pelatihan', '>', Carbon::now());
+
+                    break;
+                case "sudah lewat":
+                    $context['data'] = $context['data']->whereDate('tanggal_pelatihan', '<', Carbon::now());
+                    break;
+
+
+                case "menunggu persetujuan":
+                    $context['data'] = $context['data']->whereHas('isMember', function($q) {
+                        $q->whereNull('acc');
+                    });
+              
+                    break;
+
+
+                 
+                 
+            
+            }
+        }
 
         $context['data'] = $context['data']->with('members')->get();
 
