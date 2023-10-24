@@ -26,7 +26,7 @@ class DonasiStatusSeeder extends Seeder
             ],
             [
                 'code'=> 2,
-                'status' => 'Kurir menuju lokasi',
+                'status' => 'kurir menuju ke lokasi',
             ],
             [
                 'code'=> 3,
@@ -34,7 +34,7 @@ class DonasiStatusSeeder extends Seeder
             ],
             [
                 'code'=> 4,
-                'status' => 'Kurir telah mengambil donasi',
+                'status' => 'kurir telah mengambil donasi',
             ]
             ];
 

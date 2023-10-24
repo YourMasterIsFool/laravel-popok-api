@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             StatusPembayaranSeeder::class,
             DonasiStatusSeeder::class,
             HintQuestionSeeder::class,
+            RoleSeeder::class
         ]);
 
     }
