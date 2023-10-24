@@ -38,6 +38,15 @@ class DonasiStatusSeeder extends Seeder
             ]
             ];
 
-            DonasiStatus::insert($listDonasiStatus);
+        foreach ($listDonasiStatus  as $question) {
+            $findQuestion = DonasiStatus::where('status', $question['status'])->first();
+
+            if (is_null($findQuestion)) {
+                DonasiStatus::create([
+                    'code' => $question['code'],
+                    'status' => $question['status']
+                ]);
+            }
+        }
     }
 }

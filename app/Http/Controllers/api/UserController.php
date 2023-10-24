@@ -144,4 +144,53 @@ class UserController extends Controller
 
         return response()->ok($admin);
     }
+
+    public function checkEmailForgotPassword(Request $request) {
+        $rules['email'] ='required';
+        
+        $validator = Validator::make($request->all(), $rules);
+
+        if($validator->fails()) {
+            return response()->badRequest('Tolong di check inputan lagi', $validator->errors());
+        }
+
+
+        $findUser = User::where('email', $request->email)->first();
+
+        if(is_null($findUser)) {
+            return response()->badRequest('Email belum terdaftar');
+        }
+        
+        $data['email'] = $findUser->email;
+        $data['question'] = $findUser->question->question;
+        return response()->ok($data);
+     }
+
+     public function checkHintPassword(Request $request) {
+        $rules['question_answer'] = 'required';
+
+
+        $findUserByEmail = User::where('email', $request->email)->where('question_answer', $request->question_answer)->first();  
+        if(is_null($findUserByEmail)) {
+            return response()->badRequest('Jawaban hint salah');
+        }
+
+        return response()->ok('Benar');
+    }
+
+    public function changePassword(Request $request) {
+
+        $rules['new_password'] = 'required';
+        
+        $validator = Validator::make($request->all(), $rules);
+        if($validator->fails()) {
+            return response()->badRequest('Please cek inputan lagi', $validator->fails());
+        }
+
+        $findUserByEmail = User::where('email', $request->email)->first();
+        $findUserByEmail->password = Hash::make($request->new_password);
+        $findUserByEmail->save();
+
+        return response()->ok("Berhasil mengganti password");
+    } 
 }

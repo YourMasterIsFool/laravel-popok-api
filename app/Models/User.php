@@ -60,6 +60,10 @@ class User extends Authenticatable
         return false;
     }
 
+    public function question(){
+        return $this->belongsTo(HintQuestionModel::class ,'question_id', 'code');
+    }
+
 
 }
 

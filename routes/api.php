@@ -38,6 +38,10 @@ Route::post('/login', [UserController::class, 'login'])->name('login');
 Route::resource('/hint_question', HintQuestionController::class);
 
 
+Route::post('/check-email', [UserController::class, 'checkEmailForgotPassword'])->name('check-email');
+Route::post('/hint-password', [UserController::class, 'checkHintPassword'])->name('hint-password');
+Route::post('/change-password', [UserController::class, 'changePassword'])->name('change-password');
+
 Route::middleware('auth:api')->group(function () {
     Route::resource('/donasi', DonasiController::class);
     Route::resource("/article", ArticleController::class);
