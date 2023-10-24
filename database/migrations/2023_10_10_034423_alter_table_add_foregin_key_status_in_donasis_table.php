@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::table('donasis', function (Blueprint $table) {
             //
             // $table->dropForeign(['status_id']);
-            $table->dropColumn('status_id');
+            // $table->dropColumn('status_id');
 
         });
         Schema::table('donasis', function (Blueprint $table) {
