@@ -25,7 +25,7 @@ class UserController extends Controller
 
   
 
-        return response()->ok(auth()->user());
+        return response()->ok($findUser);
     }
 
     public function index(Request $request) {
