@@ -20,7 +20,7 @@ class ProductController extends Controller
 
         if(auth()->user()->isRole('admin')) {
 
-            return response()->ok($data->orderBy('id', 'desc')->limit(1)->get());
+            return response()->ok($data->orderBy('id', 'desc')->get());
         }
 
          return response()->ok($data->get());
@@ -41,7 +41,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 
 
         $rules['product_title'] =  'required';
         $rules['product_title'] =  'required';

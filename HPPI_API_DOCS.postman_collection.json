@@ -1,0 +1,1096 @@
+{
+	"info": {
+		"_postman_id": "97392206-9fe6-4d18-8631-750d7369986d",
+		"name": "HPPI API DOCS",
+		"description": "API DOCS Dealer Report",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21213282"
+	},
+	"item": [
+		{
+			"name": "Dealer Report By SAP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_STAGING}}/api/dealer-stock-report-mtn/0010000024",
+					"host": [
+						"{{URL_STAGING}}"
+					],
+					"path": [
+						"api",
+						"dealer-stock-report-mtn",
+						"0010000024"
+					],
+					"query": [
+						{
+							"key": "region",
+							"value": "Bali",
+							"disabled": true
+						},
+						{
+							"key": "province",
+							"value": "Bali Bali",
+							"disabled": true
+						},
+						{
+							"key": "city",
+							"value": "Papua",
+							"disabled": true
+						},
+						{
+							"key": "division",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "material",
+							"value": "015",
+							"disabled": true
+						},
+						{
+							"key": "product",
+							"value": "000000000000300221",
+							"disabled": true
+						},
+						{
+							"key": "start_date",
+							"value": "2019-09-28",
+							"disabled": true
+						},
+						{
+							"key": "end_date",
+							"value": "2023-10-31",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response Success Get Report",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_STAGING}}/api/dealer-stock-report-mtn/0010000024",
+							"host": [
+								"{{URL_STAGING}}"
+							],
+							"path": [
+								"api",
+								"dealer-stock-report-mtn",
+								"0010000024"
+							],
+							"query": [
+								{
+									"key": "region",
+									"value": "Bali",
+									"disabled": true
+								},
+								{
+									"key": "province",
+									"value": "Bali Bali",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Papua",
+									"disabled": true
+								},
+								{
+									"key": "division",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "material",
+									"value": "015",
+									"disabled": true
+								},
+								{
+									"key": "product",
+									"value": "000000000000300221",
+									"disabled": true
+								},
+								{
+									"key": "start_date",
+									"value": "2019-09-28",
+									"disabled": true
+								},
+								{
+									"key": "end_date",
+									"value": "2023-10-31",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.12.2",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"type": "text"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.26",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Oct 2023 16:02:40 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success Get Report Dealer\",\n    \"data\": [\n        {\n            \"sap_code\": \"10000024\",\n            \"dealer_name\": \"DCS HPPI\",\n            \"sales_pic\": \"HPPI11020024\",\n            \"provinsi\": \"Jawa Tengah Central\",\n            \"region\": \"Java\",\n            \"city\": null,\n            \"district\": null,\n            \"division\": \"30\",\n            \"material_group\": \"Outboard\",\n            \"material_number\": \"100500\",\n            \"material_description\": \"BF20DK2-LH-3-NHB14\",\n            \"periode\": \"10-2023\",\n            \"maxs_stock\": 0,\n            \"ship\": 0,\n            \"retail\": -40,\n            \"stock_store\": 10,\n            \"stock_warehouse\": 10,\n            \"stock_date\": \"2023-10-27 11:25:08\"\n        },\n        {\n            \"sap_code\": \"10000024\",\n            \"dealer_name\": \"DCS HPPI\",\n            \"sales_pic\": \"HPPI11020024\",\n            \"provinsi\": \"Jawa Tengah Central\",\n            \"region\": \"Java\",\n            \"city\": null,\n            \"district\": null,\n            \"division\": \"30\",\n            \"material_group\": \"Outboard\",\n            \"material_number\": \"100385\",\n            \"material_description\": \"BF20DK2-LH-L-NHB14\",\n            \"periode\": \"10-2023\",\n            \"maxs_stock\": 0,\n            \"ship\": 0,\n            \"retail\": -32,\n            \"stock_store\": 11,\n            \"stock_warehouse\": 10,\n            \"stock_date\": \"2023-10-27 11:25:08\"\n        },\n        {\n            \"sap_code\": \"10000024\",\n            \"dealer_name\": \"DCS HPPI\",\n            \"sales_pic\": \"HPPI11020024\",\n            \"provinsi\": \"Jawa Tengah Central\",\n            \"region\": \"Java\",\n            \"city\": null,\n            \"district\": null,\n            \"division\": \"30\",\n            \"material_group\": \"Outboard\",\n            \"material_number\": \"100505\",\n            \"material_description\": \"BF90DK5-XR-T3-NHB14\",\n            \"periode\": \"10-2023\",\n            \"maxs_stock\": 0,\n            \"ship\": 0,\n            \"retail\": -42,\n            \"stock_store\": 10,\n            \"stock_warehouse\": 12,\n            \"stock_date\": \"2023-10-27 11:25:08\"\n        },\n        {\n            \"sap_code\": \"10000024\",\n            \"dealer_name\": \"DCS HPPI\",\n            \"sales_pic\": \"HPPI11020024\",\n            \"provinsi\": \"Jawa Tengah Central\",\n            \"region\": \"Java\",\n            \"city\": null,\n            \"district\": null,\n            \"division\": \"30\",\n            \"material_group\": \"Brush Cutter\",\n            \"material_number\": \"100004\",\n            \"material_description\": \"UM616K3-EB-E-NH192\",\n            \"periode\": \"10-2023\",\n            \"maxs_stock\": 0,\n            \"ship\": 0,\n            \"retail\": -40,\n            \"stock_store\": 10,\n            \"stock_warehouse\": 10,\n            \"stock_date\": \"2023-10-27 11:25:08\"\n        },\n        {\n            \"sap_code\": \"10000024\",\n            \"dealer_name\": \"DCS HPPI\",\n            \"sales_pic\": \"HPPI11020024\",\n            \"provinsi\": \"Jawa Tengah Central\",\n            \"region\": \"Java\",\n            \"city\": null,\n            \"district\": null,\n            \"division\": \"30\",\n            \"material_group\": \"Brush Cutter\",\n            \"material_number\": \"100004\",\n            \"material_description\": \"UM616K3-EB-E-NH192\",\n            \"periode\": \"10-2023\",\n            \"maxs_stock\": 0,\n            \"ship\": 0,\n            \"retail\": -41,\n            \"stock_store\": 10,\n            \"stock_warehouse\": 10,\n            \"stock_date\": \"2023-10-27 11:25:08\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Reponse Success Get Report By Filter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_STAGING}}/api/dealer-stock-report-mtn/0010000024?start_date=2019-09-28&end_date=2023-10-31",
+							"host": [
+								"{{URL_STAGING}}"
+							],
+							"path": [
+								"api",
+								"dealer-stock-report-mtn",
+								"0010000024"
+							],
+							"query": [
+								{
+									"key": "region",
+									"value": "Bali",
+									"disabled": true
+								},
+								{
+									"key": "province",
+									"value": "Bali Bali",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Papua",
+									"disabled": true
+								},
+								{
+									"key": "division",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "material",
+									"value": "015",
+									"disabled": true
+								},
+								{
+									"key": "product",
+									"value": "000000000000300221",
+									"disabled": true
+								},
+								{
+									"key": "start_date",
+									"value": "2019-09-28"
+								},
+								{
+									"key": "end_date",
+									"value": "2023-10-31"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.12.2",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"type": "text"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.26",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Oct 2023 16:03:09 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success Get Report Dealer\",\n    \"data\": [\n        {\n            \"sap_code\": \"10000024\",\n            \"dealer_name\": \"DCS HPPI\",\n            \"sales_pic\": \"HPPI11020024\",\n            \"provinsi\": \"Jawa Tengah Central\",\n            \"region\": \"Java\",\n            \"city\": null,\n            \"district\": null,\n            \"division\": \"30\",\n            \"material_group\": \"Outboard\",\n            \"material_number\": \"100500\",\n            \"material_description\": \"BF20DK2-LH-3-NHB14\",\n            \"periode\": \"10-2023\",\n            \"maxs_stock\": 0,\n            \"ship\": 0,\n            \"retail\": -40,\n            \"stock_store\": 10,\n            \"stock_warehouse\": 10,\n            \"stock_date\": \"2023-10-27 11:25:08\"\n        },\n        {\n            \"sap_code\": \"10000024\",\n            \"dealer_name\": \"DCS HPPI\",\n            \"sales_pic\": \"HPPI11020024\",\n            \"provinsi\": \"Jawa Tengah Central\",\n            \"region\": \"Java\",\n            \"city\": null,\n            \"district\": null,\n            \"division\": \"30\",\n            \"material_group\": \"Outboard\",\n            \"material_number\": \"100385\",\n            \"material_description\": \"BF20DK2-LH-L-NHB14\",\n            \"periode\": \"10-2023\",\n            \"maxs_stock\": 0,\n            \"ship\": 0,\n            \"retail\": -32,\n            \"stock_store\": 11,\n            \"stock_warehouse\": 10,\n            \"stock_date\": \"2023-10-27 11:25:08\"\n        },\n        {\n            \"sap_code\": \"10000024\",\n            \"dealer_name\": \"DCS HPPI\",\n            \"sales_pic\": \"HPPI11020024\",\n            \"provinsi\": \"Jawa Tengah Central\",\n            \"region\": \"Java\",\n            \"city\": null,\n            \"district\": null,\n            \"division\": \"30\",\n            \"material_group\": \"Outboard\",\n            \"material_number\": \"100505\",\n            \"material_description\": \"BF90DK5-XR-T3-NHB14\",\n            \"periode\": \"10-2023\",\n            \"maxs_stock\": 0,\n            \"ship\": 0,\n            \"retail\": -42,\n            \"stock_store\": 10,\n            \"stock_warehouse\": 12,\n            \"stock_date\": \"2023-10-27 11:25:08\"\n        },\n        {\n            \"sap_code\": \"10000024\",\n            \"dealer_name\": \"DCS HPPI\",\n            \"sales_pic\": \"HPPI11020024\",\n            \"provinsi\": \"Jawa Tengah Central\",\n            \"region\": \"Java\",\n            \"city\": null,\n            \"district\": null,\n            \"division\": \"30\",\n            \"material_group\": \"Brush Cutter\",\n            \"material_number\": \"100004\",\n            \"material_description\": \"UM616K3-EB-E-NH192\",\n            \"periode\": \"10-2023\",\n            \"maxs_stock\": 0,\n            \"ship\": 0,\n            \"retail\": -40,\n            \"stock_store\": 10,\n            \"stock_warehouse\": 10,\n            \"stock_date\": \"2023-10-27 11:25:08\"\n        },\n        {\n            \"sap_code\": \"10000024\",\n            \"dealer_name\": \"DCS HPPI\",\n            \"sales_pic\": \"HPPI11020024\",\n            \"provinsi\": \"Jawa Tengah Central\",\n            \"region\": \"Java\",\n            \"city\": null,\n            \"district\": null,\n            \"division\": \"30\",\n            \"material_group\": \"Brush Cutter\",\n            \"material_number\": \"100004\",\n            \"material_description\": \"UM616K3-EB-E-NH192\",\n            \"periode\": \"10-2023\",\n            \"maxs_stock\": 0,\n            \"ship\": 0,\n            \"retail\": -41,\n            \"stock_store\": 10,\n            \"stock_warehouse\": 10,\n            \"stock_date\": \"2023-10-27 11:25:08\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Response Error Dealer Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_STAGING}}/api/dealer-stock-report-mtn/001000002111",
+							"host": [
+								"{{URL_STAGING}}"
+							],
+							"path": [
+								"api",
+								"dealer-stock-report-mtn",
+								"001000002111"
+							],
+							"query": [
+								{
+									"key": "region",
+									"value": "Bali",
+									"disabled": true
+								},
+								{
+									"key": "province",
+									"value": "Bali Bali",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Papua",
+									"disabled": true
+								},
+								{
+									"key": "division",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "material",
+									"value": "015",
+									"disabled": true
+								},
+								{
+									"key": "product",
+									"value": "000000000000300221",
+									"disabled": true
+								},
+								{
+									"key": "start_date",
+									"value": "2019-09-28",
+									"disabled": true
+								},
+								{
+									"key": "end_date",
+									"value": "2023-10-31",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.12.2",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.26",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Oct 2023 16:03:37 GMT",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Dealer Not Found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Material Group",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_STAGING}}/api/mtn-material-group",
+					"host": [
+						"{{URL_STAGING}}"
+					],
+					"path": [
+						"api",
+						"mtn-material-group"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response Success Get Material Categori",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_STAGING}}/api/mtn-material-group",
+							"host": [
+								"{{URL_STAGING}}"
+							],
+							"path": [
+								"api",
+								"mtn-material-group"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.12.2",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"type": "text"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.26",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Oct 2023 16:04:11 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Get Material Group MTN\",\n    \"data\": [\n        {\n            \"material_group\": \"019\",\n            \"mg_description\": \"Accessories\"\n        },\n        {\n            \"material_group\": \"015\",\n            \"mg_description\": \"Agriculture\"\n        },\n        {\n            \"material_group\": \"011\",\n            \"mg_description\": \"Backpack Sprayer\"\n        },\n        {\n            \"material_group\": \"003\",\n            \"mg_description\": \"Blower\"\n        },\n        {\n            \"material_group\": \"004\",\n            \"mg_description\": \"Brush Cutter\"\n        },\n        {\n            \"material_group\": \"005\",\n            \"mg_description\": \"Brush Mower\"\n        },\n        {\n            \"material_group\": \"016\",\n            \"mg_description\": \"Engine PP\"\n        },\n        {\n            \"material_group\": \"001\",\n            \"mg_description\": \"Generator\"\n        },\n        {\n            \"material_group\": \"014\",\n            \"mg_description\": \"Lawn & Garden\"\n        },\n        {\n            \"material_group\": \"006\",\n            \"mg_description\": \"Lawnmower\"\n        },\n        {\n            \"material_group\": \"007\",\n            \"mg_description\": \"Monpal\"\n        },\n        {\n            \"material_group\": \"008\",\n            \"mg_description\": \"Power Carrier\"\n        },\n        {\n            \"material_group\": \"009\",\n            \"mg_description\": \"Pump\"\n        },\n        {\n            \"material_group\": \"010\",\n            \"mg_description\": \"Riding Mower\"\n        },\n        {\n            \"material_group\": \"012\",\n            \"mg_description\": \"Tiller\"\n        },\n        {\n            \"material_group\": \"013\",\n            \"mg_description\": \"Water Pump\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Product List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_STAGING}}/api/mtn-material-product",
+					"host": [
+						"{{URL_STAGING}}"
+					],
+					"path": [
+						"api",
+						"mtn-material-product"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response Success Get Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_STAGING}}/api/mtn-material-product",
+							"host": [
+								"{{URL_STAGING}}"
+							],
+							"path": [
+								"api",
+								"mtn-material-product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.12.2",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"type": "text"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.26",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Oct 2023 16:04:43 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Get Material Product\",\n    \"data\": [\n        {\n            \"material_number\": \"000000000000100502\",\n            \"material_description\": \"GX630RH-QA-F1-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000300053\",\n            \"material_description\": \"72200 ROTOR ASSY LEFT\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300080\",\n            \"material_description\": \"Muffler V-Twin Left\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300081\",\n            \"material_description\": \"Muffler V-Twin Right\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300093\",\n            \"material_description\": \"SSBCU-BRUSHCUTTER\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300133\",\n            \"material_description\": \"10885 300 SPRING ROTOR I\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300134\",\n            \"material_description\": \"10889 F300 NEW YELLOW RIDGER\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300135\",\n            \"material_description\": \"10896 FJ500 NEW YELLOW RIDGER\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300136\",\n            \"material_description\": \"11795 F300/FJ500 BLUE SPIRAL 750\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300152\",\n            \"material_description\": \"8603007 STAR ROTOR PIN\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300153\",\n            \"material_description\": \"8701002 MIRACLE ROTOR R PIN\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300154\",\n            \"material_description\": \"8701005 STAR ROTOR R PIN\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300163\",\n            \"material_description\": \"Wheel Kit for Generating EG Series\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300207\",\n            \"material_description\": \"87531-Z0H-0002 Mark Honda\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300208\",\n            \"material_description\": \"87531-Z0Z-0002 Mark Honda\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300217\",\n            \"material_description\": \"10893 MIRACLE ROTOR 800\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300218\",\n            \"material_description\": \"M33023 Star Rotor 400\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300222\",\n            \"material_description\": \"8701005EX R PIN 16\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300223\",\n            \"material_description\": \"15605-ZN1-000 Cooler Assy IL\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300224\",\n            \"material_description\": \"37240-ZG5-004 SW,Oil Press\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300225\",\n            \"material_description\": \"91314-ME5-003 O-Ring 10x2,6\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300094\",\n            \"material_description\": \"SSHHSU-HEDGETRIMMER S\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300095\",\n            \"material_description\": \"SSHHLU-HEDGETRIMMER L\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300096\",\n            \"material_description\": \"SSBLU-BLOWER\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300097\",\n            \"material_description\": \"SSETU-EDGE TRIMMER\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000100005\",\n            \"material_description\": \"UMC425E-LA-ET-R280\",\n            \"material_group\": \"004\"\n        },\n        {\n            \"material_number\": \"000000000000100007\",\n            \"material_description\": \"UMK435T-U2-ST-R280\",\n            \"material_group\": \"004\"\n        },\n        {\n            \"material_number\": \"000000000000100013\",\n            \"material_description\": \"GD411-V1-A5-NH105\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100004\",\n            \"material_description\": \"UM616K3-EB-E-NH192\",\n            \"material_group\": \"004\"\n        },\n        {\n            \"material_number\": \"000000000000100006\",\n            \"material_description\": \"UMC435E-LA-ET-R280\",\n            \"material_group\": \"004\"\n        },\n        {\n            \"material_number\": \"000000000000100009\",\n            \"material_description\": \"UMR435T-L2-ST-R280\",\n            \"material_group\": \"004\"\n        },\n        {\n            \"material_number\": \"000000000000100331\",\n            \"material_description\": \"GP160H-SN-S-NH31\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100016\",\n            \"material_description\": \"GP160H-SD-1-NH31\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100335\",\n            \"material_description\": \"GXV160H2@-N5-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100504\",\n            \"material_description\": \"GX50T-SS-E-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190001\",\n            \"material_description\": \"F300+Whl+Wght#1A\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100338\",\n            \"material_description\": \"GX200T2-CH-B2-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100014\",\n            \"material_description\": \"GFV110-RZ-Y1-NH1\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100336\",\n            \"material_description\": \"HRJ196-PW-DH-NH168\",\n            \"material_group\": \"006\"\n        },\n        {\n            \"material_number\": \"000000000000100311\",\n            \"material_description\": \"WL20XN-NF-R280\",\n            \"material_group\": \"013\"\n        },\n        {\n            \"material_number\": \"000000000000100313\",\n            \"material_description\": \"WT40XK3-D-R280\",\n            \"material_group\": \"013\"\n        },\n        {\n            \"material_number\": \"000000000000100322\",\n            \"material_description\": \"EP2500CX1-RR-H-NH1\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000190003\",\n            \"material_description\": \"F300+Whl+Wght+Str650+Ex200#1C\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100395\",\n            \"material_description\": \"GX160T2-CH-B3-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100397\",\n            \"material_description\": \"GX390T2-LG-HD-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100140\",\n            \"material_description\": \"GX690RH-TX-F7-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100151\",\n            \"material_description\": \"EG1000-R-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100187\",\n            \"material_description\": \"EU30IS1-R-A6-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100163\",\n            \"material_description\": \"EP1000-R-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100180\",\n            \"material_description\": \"EU10IT1-R-R1-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100439\",\n            \"material_description\": \"GX390H2-QN-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100275\",\n            \"material_description\": \"WL30XH-DR-R280\",\n            \"material_group\": \"013\"\n        },\n        {\n            \"material_number\": \"000000000000100278\",\n            \"material_description\": \"WT20XK4-D-R280\",\n            \"material_group\": \"013\"\n        },\n        {\n            \"material_number\": \"000000000000100294\",\n            \"material_description\": \"FG201@-KW-R280\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100302\",\n            \"material_description\": \"EG5000CX-RH-NH105\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100433\",\n            \"material_description\": \"UMK450T-U2-ST-R280\",\n            \"material_group\": \"004\"\n        },\n        {\n            \"material_number\": \"000000000000100437\",\n            \"material_description\": \"EZ6500CXS-REH-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100199\",\n            \"material_description\": \"HRU216M2-TB-UH\",\n            \"material_group\": \"006\"\n        },\n        {\n            \"material_number\": \"000000000000100438\",\n            \"material_description\": \"GX270H2-QN-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100023\",\n            \"material_description\": \"GX120T2-QD-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100047\",\n            \"material_description\": \"GX160T2-SD-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100018\",\n            \"material_description\": \"GP200H-QD-1-NH31\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100406\",\n            \"material_description\": \"EU22IT-R-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100030\",\n            \"material_description\": \"GX160H1-SD-1-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190005\",\n            \"material_description\": \"F300+Whl+Wght+Str650+Rdgr#2B\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190007\",\n            \"material_description\": \"F300+Whl+Wght+Mrcl#3A\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190002\",\n            \"material_description\": \"F300+Whl+Wght+Str650#1B\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190004\",\n            \"material_description\": \"F300+Whl+Wght+Rdgr#2A\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190006\",\n            \"material_description\": \"F300+Whl+Wght+Str650+Ex200+Rdgr#2C\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100432\",\n            \"material_description\": \"GX50T-SD-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100190\",\n            \"material_description\": \"EU65IS1-RT-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000190009\",\n            \"material_description\": \"F300+Whl+Wght+Str650+Mrcl+Rdgr#4A\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190011\",\n            \"material_description\": \"FJ500+RtrAssy#1A\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100429\",\n            \"material_description\": \"GX120T3-QD-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190013\",\n            \"material_description\": \"FJ500+Str750+Ex200#1C\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100428\",\n            \"material_description\": \"HRJ196-PW-DH-NH190\",\n            \"material_group\": \"006\"\n        },\n        {\n            \"material_number\": \"000000000000100157\",\n            \"material_description\": \"EG6500CXS-RH-NH105\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100159\",\n            \"material_description\": \"EM10000K1-RR-H-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100176\",\n            \"material_description\": \"ET12000K1-RR-H-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100344\",\n            \"material_description\": \"EU7000IS-AT-1-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100063\",\n            \"material_description\": \"GX200T2-LB-H-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100068\",\n            \"material_description\": \"GX200T2-QB-HV-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100064\",\n            \"material_description\": \"GX200T2-LH-B2-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100425\",\n            \"material_description\": \"GX160H2-WM-K-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100427\",\n            \"material_description\": \"GX120T3-QP-T-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190008\",\n            \"material_description\": \"F300+Whl+Wght+Mrcl+Rdgr#3B\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190010\",\n            \"material_description\": \"F300+Whl+Wght+Str650+Ex200+Mrcl+Rdgr#4B\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190012\",\n            \"material_description\": \"FJ500+Str750#1B\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100422\",\n            \"material_description\": \"UMR435N-L2-XT-R280\",\n            \"material_group\": \"004\"\n        },\n        {\n            \"material_number\": \"000000000000100424\",\n            \"material_description\": \"GX200H2-SD-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000300100\",\n            \"material_description\": \"SSESLU-EXTENSION SHAFT L\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300101\",\n            \"material_description\": \"SSPPU-POLE PRUNER\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300103\",\n            \"material_description\": \"M33001 FJ500 NEW STAR ROTOR SP\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300108\",\n            \"material_description\": \"FJ500 M33004 STAR ROTOR 700\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300109\",\n            \"material_description\": \"F300 / FJ500 M33005 EXT. ROTOR 200\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300137\",\n            \"material_description\": \"REGULATOR WINN W.688 M\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300138\",\n            \"material_description\": \"SELANG LPG 1,8m\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300151\",\n            \"material_description\": \"8601001 MIRACLE ROTOR PIN\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300178\",\n            \"material_description\": \"WHEEL KIT TILLER F300\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300179\",\n            \"material_description\": \"WEIGHT KIT TILLER F300\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300190\",\n            \"material_description\": \"Rotor Assy HPPI\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300195\",\n            \"material_description\": \"BL 4.10/3.50-5 2 PR (Ban Luar FJ500)\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300219\",\n            \"material_description\": \"M33026 Blue Spirale 400\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300220\",\n            \"material_description\": \"8022110EX F300/FJ500 STAR ROTOR BLADE\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300221\",\n            \"material_description\": \"8603007EX F300/FJ500 STAR ROTOR PIN 8X63\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300226\",\n            \"material_description\": \"15614-ZJ1-R51 Hose A, Oil\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300227\",\n            \"material_description\": \"15616-ZJ1-R51 Hose B, Oil\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300229\",\n            \"material_description\": \"Insulator Comp, Carb\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000100349\",\n            \"material_description\": \"GXH50UT-QX-A-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000300044\",\n            \"material_description\": \"11598 FJ500 STAR ROTOR DX\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300047\",\n            \"material_description\": \"Wheel for Tiller FJ500 atau Ban Dalam FJ\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300050\",\n            \"material_description\": \"Wheel Kit for Generating\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300051\",\n            \"material_description\": \"72100 ROTOR ASSY RIGHT\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000100409\",\n            \"material_description\": \"GX390T2-QG-ND-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100410\",\n            \"material_description\": \"WB20XN-NF-G-R280\",\n            \"material_group\": \"013\"\n        },\n        {\n            \"material_number\": \"000000000000100399\",\n            \"material_description\": \"GX270H-LG-HD-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000300131\",\n            \"material_description\": \"M33020 F300 STAR ROTOR 650\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000300132\",\n            \"material_description\": \"M33015 F300 MIRACLE ROTOR720\",\n            \"material_group\": \"019\"\n        },\n        {\n            \"material_number\": \"000000000000190015\",\n            \"material_description\": \"FJ500+Str750+Rdgr#2B\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190017\",\n            \"material_description\": \"FJ500+RtrAssy+Mrcl#3A\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190019\",\n            \"material_description\": \"FJ500+RtrAssy+Str750+Mrcl+Rdgr#4A\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190014\",\n            \"material_description\": \"FJ500+RtrAssy+Rdgr#2A\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190016\",\n            \"material_description\": \"FJ500+Str750+Ex200+Rdgr#2C\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190018\",\n            \"material_description\": \"FJ500+RtrAssy+Mrcl+Rdgr#3B\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190021\",\n            \"material_description\": \"FJ500+PaddyRtrCageWhl+RakePaddyRtr#5\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190020\",\n            \"material_description\": \"FJ500+RtrAssy+Str750+Ex200+Mrcl+Rdgr#4B\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190025\",\n            \"material_description\": \"GX660 + Muffler Left\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190027\",\n            \"material_description\": \"GX690 + Muffler Left\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190029\",\n            \"material_description\": \"EG6500CXS+Wheel Kit\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000190026\",\n            \"material_description\": \"GX660 + Muffler Right\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190028\",\n            \"material_description\": \"GX690 + Muffler Right\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190031\",\n            \"material_description\": \"ET12000K1+Wheel Kit\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000190041\",\n            \"material_description\": \"GX200T2 + REGULATOR + SELANG\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190043\",\n            \"material_description\": \"FQ650 + Standard Rotor\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100443\",\n            \"material_description\": \"GP200H-SD-1-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100346\",\n            \"material_description\": \"GX390T2-QG-N-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100132\",\n            \"material_description\": \"GX660RH-TD-W-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100136\",\n            \"material_description\": \"GX690R-TD-W-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100139\",\n            \"material_description\": \"GX690RH-TD-W-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100350\",\n            \"material_description\": \"GX270H-QG-N-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100441\",\n            \"material_description\": \"GX120UT3-RH-Q4-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100436\",\n            \"material_description\": \"EZ3000CX-REH-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100351\",\n            \"material_description\": \"GX200T2-QD-G-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100360\",\n            \"material_description\": \"GX200T2-SD-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100362\",\n            \"material_description\": \"GX390T2-QB-HZ-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190030\",\n            \"material_description\": \"EM10000K1+Wheel Kit\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100365\",\n            \"material_description\": \"F300-IN-R280\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100369\",\n            \"material_description\": \"GX630H-VT-K-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190038\",\n            \"material_description\": \"FJ500+PaddyRtrCageWhl+RakePaddyRtr#5\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000190040\",\n            \"material_description\": \"GX390T2 + REGULATOR + SELANG\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000190042\",\n            \"material_description\": \"FQ650 + Standard Rotor + Ridger\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100447\",\n            \"material_description\": \"GX390T2-QB-D-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100449\",\n            \"material_description\": \"GX390T2-LB-D-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100501\",\n            \"material_description\": \"GP200H-CH-1-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100080\",\n            \"material_description\": \"GX270H-QN-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100405\",\n            \"material_description\": \"FA6500X-RN-1-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100086\",\n            \"material_description\": \"GX270T2-QN-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100085\",\n            \"material_description\": \"GX270T2-LH-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100352\",\n            \"material_description\": \"GX390T2-QN-G-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100304\",\n            \"material_description\": \"GP160H-CH-1-NH31\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100306\",\n            \"material_description\": \"GX690H-TA-X2-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100308\",\n            \"material_description\": \"WB30XN-NF-R280\",\n            \"material_group\": \"013\"\n        },\n        {\n            \"material_number\": \"000000000000100303\",\n            \"material_description\": \"ER2500CX-R-NH1\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100380\",\n            \"material_description\": \"GX120T2-QP-T-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100127\",\n            \"material_description\": \"GX630RH-VE-P4-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100135\",\n            \"material_description\": \"GX690H-VX-C2-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100138\",\n            \"material_description\": \"GX690R-TX-F7-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100280\",\n            \"material_description\": \"WT30XK4-D-R280\",\n            \"material_group\": \"013\"\n        },\n        {\n            \"material_number\": \"000000000000100296\",\n            \"material_description\": \"FJ500-IN-R280\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100370\",\n            \"material_description\": \"GX690H-VT-K-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100093\",\n            \"material_description\": \"GX390H1-QN-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100105\",\n            \"material_description\": \"GX390T2-LB-HS-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100108\",\n            \"material_description\": \"GX390T2-QN-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100125\",\n            \"material_description\": \"GX630RH-QD-W-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100094\",\n            \"material_description\": \"GX390RT2-VP-E9-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100107\",\n            \"material_description\": \"GX390T2-QB-HS-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100110\",\n            \"material_description\": \"GX390T2-QX-E-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100372\",\n            \"material_description\": \"GP160H-WH-1-NH31\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100378\",\n            \"material_description\": \"FJ500-IN-2-R280\",\n            \"material_group\": \"012\"\n        },\n        {\n            \"material_number\": \"000000000000100381\",\n            \"material_description\": \"GX200H-SD-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100305\",\n            \"material_description\": \"GP200H-CH-1-NH31\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100307\",\n            \"material_description\": \"WB20XN-NF-R280\",\n            \"material_group\": \"013\"\n        },\n        {\n            \"material_number\": \"000000000000100309\",\n            \"material_description\": \"WJR2525T-GC-S-R280\",\n            \"material_group\": \"011\"\n        },\n        {\n            \"material_number\": \"000000000000100310\",\n            \"material_description\": \"WJR4025T-GC-S-R280\",\n            \"material_group\": \"011\"\n        },\n        {\n            \"material_number\": \"000000000000100312\",\n            \"material_description\": \"WL30XN-NF-R280\",\n            \"material_group\": \"013\"\n        },\n        {\n            \"material_number\": \"000000000000100320\",\n            \"material_description\": \"WR30XT-DR-R280\",\n            \"material_group\": \"013\"\n        },\n        {\n            \"material_number\": \"000000000000100423\",\n            \"material_description\": \"GX160H2-SD-1-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100411\",\n            \"material_description\": \"WB30XN-NF-G-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100323\",\n            \"material_description\": \"EU70IS-RT-R280\",\n            \"material_group\": \"001\"\n        },\n        {\n            \"material_number\": \"000000000000100444\",\n            \"material_description\": \"GP160H-SD-1-R280\",\n            \"material_group\": \"016\"\n        },\n        {\n            \"material_number\": \"000000000000100448\",\n            \"material_description\": \"GX120T3-LT-K1-R280\",\n            \"material_group\": \"016\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Region List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_STAGING}}/api/mtn-region",
+					"host": [
+						"{{URL_STAGING}}"
+					],
+					"path": [
+						"api",
+						"mtn-region"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response Success Get Region",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_STAGING}}/api/mtn-region",
+							"host": [
+								"{{URL_STAGING}}"
+							],
+							"path": [
+								"api",
+								"mtn-region"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.12.2",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"type": "text"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.26",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Oct 2023 16:05:39 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Get Region List\",\n    \"data\": [\n        {\n            \"name\": \"Bali\"\n        },\n        {\n            \"name\": \"East Nusa Tenggara\"\n        },\n        {\n            \"name\": \"Java\"\n        },\n        {\n            \"name\": \"Kalimantan\"\n        },\n        {\n            \"name\": \"Maluku\"\n        },\n        {\n            \"name\": \"Papua\"\n        },\n        {\n            \"name\": \"Sulawesi\"\n        },\n        {\n            \"name\": \"Sumatera\"\n        },\n        {\n            \"name\": \"West  Nusa Tenggara\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Provinsi List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{LOCAL}}/api/mtn-provinsi",
+					"host": [
+						"{{LOCAL}}"
+					],
+					"path": [
+						"api",
+						"mtn-provinsi"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Response Success Get Provinsi",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LOCAL}}/api/mtn-provinsi",
+							"host": [
+								"{{LOCAL}}"
+							],
+							"path": [
+								"api",
+								"mtn-provinsi"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Oct 2023 16:06:45 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Oct 2023 16:06:45 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"type": "text"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.2.34",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Get Provinsi List\",\n    \"data\": [\n        {\n            \"name\": \"Bali Bali\"\n        },\n        {\n            \"name\": \"Bengkulu Bengkulu\"\n        },\n        {\n            \"name\": \"DI Aceh Aceh\"\n        },\n        {\n            \"name\": \"DI Yogyakarta Yogyak\"\n        },\n        {\n            \"name\": \"DKI Jakarta Jakarta\"\n        },\n        {\n            \"name\": \"Irian Jaya Irian Jay\"\n        },\n        {\n            \"name\": \"Jambi Jambi\"\n        },\n        {\n            \"name\": \"Jawa Barat West Java\"\n        },\n        {\n            \"name\": \"Jawa Tengah Central\"\n        },\n        {\n            \"name\": \"Jawa Timur East Java\"\n        },\n        {\n            \"name\": \"Kalimantan Barat Wes\"\n        },\n        {\n            \"name\": \"Kalimantan Selatan S\"\n        },\n        {\n            \"name\": \"Kalimantan Tengah Ce\"\n        },\n        {\n            \"name\": \"Kalimantan Timur Eas\"\n        },\n        {\n            \"name\": \"Lampung Lampung\"\n        },\n        {\n            \"name\": \"Maluku Maluku\"\n        },\n        {\n            \"name\": \"Nusa Tenggara Barat\"\n        },\n        {\n            \"name\": \"Nusa Tenggara Timur\"\n        },\n        {\n            \"name\": \"Riau Riau\"\n        },\n        {\n            \"name\": \"Sulawesi Barat\"\n        },\n        {\n            \"name\": \"Sulawesi Selatan Sou\"\n        },\n        {\n            \"name\": \"Sulawesi Tengah Cent\"\n        },\n        {\n            \"name\": \"Sulawesi Tenggara So\"\n        },\n        {\n            \"name\": \"Sulawesi Utara North\"\n        },\n        {\n            \"name\": \"Sumatera Barat West\"\n        },\n        {\n            \"name\": \"Sumatera Selatan Sou\"\n        },\n        {\n            \"name\": \"Sumatera Utara North\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get City List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_STAGING}}/api/mtn-city",
+					"host": [
+						"{{URL_STAGING}}"
+					],
+					"path": [
+						"api",
+						"mtn-city"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Reponse Success Get CIty",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_STAGING}}/api/mtn-city",
+							"host": [
+								"{{URL_STAGING}}"
+							],
+							"path": [
+								"api",
+								"mtn-city"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.12.2",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"type": "text"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.26",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Oct 2023 16:06:12 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Get City List\",\n    \"data\": [\n        {\n            \"name\": \"-\"\n        },\n        {\n            \"name\": \"Papua\"\n        },\n        {\n            \"name\": \"PASAMANBARAT\"\n        },\n        {\n            \"name\": \"AcehBarat\"\n        },\n        {\n            \"name\": \"Ambon\"\n        },\n        {\n            \"name\": \"Bali\"\n        },\n        {\n            \"name\": \"BALI\"\n        },\n        {\n            \"name\": \"Balikpapan\"\n        },\n        {\n            \"name\": \"BalikpapanBarat\"\n        },\n        {\n            \"name\": \"BANDAACEH\"\n        },\n        {\n            \"name\": \"Bandung\"\n        },\n        {\n            \"name\": \"Banggai\"\n        },\n        {\n            \"name\": \"Bangka\"\n        },\n        {\n            \"name\": \"BangkaBelitung\"\n        },\n        {\n            \"name\": \"Banjar\"\n        },\n        {\n            \"name\": \"Banjarmasin\"\n        },\n        {\n            \"name\": \"Banten\"\n        },\n        {\n            \"name\": \"BANTEN\"\n        },\n        {\n            \"name\": \"Banyuwangi\"\n        },\n        {\n            \"name\": \"BANYUWANGI\"\n        },\n        {\n            \"name\": \"Banyuwangi,JawaTimur\"\n        },\n        {\n            \"name\": \"Batam\"\n        },\n        {\n            \"name\": \"BAU-BAU\"\n        },\n        {\n            \"name\": \"Begalung,Padang,SumateraBarat.\"\n        },\n        {\n            \"name\": \"Bekasi\"\n        },\n        {\n            \"name\": \"Bengkulu\"\n        },\n        {\n            \"name\": \"BENGKULU\"\n        },\n        {\n            \"name\": \"Biak\"\n        },\n        {\n            \"name\": \"Bima\"\n        },\n        {\n            \"name\": \"Blitar\"\n        },\n        {\n            \"name\": \"BLITAR\"\n        },\n        {\n            \"name\": \"Blora\"\n        },\n        {\n            \"name\": \"BOGOR\"\n        },\n        {\n            \"name\": \"Bogor\"\n        },\n        {\n            \"name\": \"Bogor,JawaBarat\"\n        },\n        {\n            \"name\": \"Bojonegoro\"\n        },\n        {\n            \"name\": \"Bontang\"\n        },\n        {\n            \"name\": \"BULELENG,BALI\"\n        },\n        {\n            \"name\": \"Bulukumba\"\n        },\n        {\n            \"name\": \"BULUNGAN\"\n        },\n        {\n            \"name\": \"Cianjur\"\n        },\n        {\n            \"name\": \"Cikarang\"\n        },\n        {\n            \"name\": \"Cirebon\"\n        },\n        {\n            \"name\": \"DenpasarSelatan\"\n        },\n        {\n            \"name\": \"DIYogyakarta\"\n        },\n        {\n            \"name\": \"DKIJakarta\"\n        },\n        {\n            \"name\": \"DKIJakartaRaya\"\n        },\n        {\n            \"name\": \"Enrekang\"\n        },\n        {\n            \"name\": \"FakFak\"\n        },\n        {\n            \"name\": \"Garut\"\n        },\n        {\n            \"name\": \"Gombong\"\n        },\n        {\n            \"name\": \"Gorontalo\"\n        },\n        {\n            \"name\": \"GRESIK\"\n        },\n        {\n            \"name\": \"HALMAHERASELATAN\"\n        },\n        {\n            \"name\": \"Indramayu\"\n        },\n        {\n            \"name\": \"Jakarta\"\n        },\n        {\n            \"name\": \"JakartaBarat\"\n        },\n        {\n            \"name\": \"JAKARTABARAT\"\n        },\n        {\n            \"name\": \"JakartaPusat\"\n        },\n        {\n            \"name\": \"JakartaTimur\"\n        },\n        {\n            \"name\": \"JAKARTAUTARA\"\n        },\n        {\n            \"name\": \"Jambi\"\n        },\n        {\n            \"name\": \"JawaBarat\"\n        },\n        {\n            \"name\": \"JawaTengah\"\n        },\n        {\n            \"name\": \"JawaTEngah\"\n        },\n        {\n            \"name\": \"JawaTimur\"\n        },\n        {\n            \"name\": \"Jayapura\"\n        },\n        {\n            \"name\": \"JEMBER\"\n        },\n        {\n            \"name\": \"Jember\"\n        },\n        {\n            \"name\": \"Jepara\"\n        },\n        {\n            \"name\": \"Jombang\"\n        },\n        {\n            \"name\": \"Kab.Banyuwangi,JawaTimur.\"\n        },\n        {\n            \"name\": \"Kab.Jombang\"\n        },\n        {\n            \"name\": \"Kab.Pati\"\n        },\n        {\n            \"name\": \"KABANJAHE\"\n        },\n        {\n            \"name\": \"KabupatenKudus\"\n        },\n        {\n            \"name\": \"Kalianda\"\n        },\n        {\n            \"name\": \"KalimantanBarat\"\n        },\n        {\n            \"name\": \"KalimantanSelatan\"\n        },\n        {\n            \"name\": \"Kalimantantengah\"\n        },\n        {\n            \"name\": \"KalimantanTimur\"\n        },\n        {\n            \"name\": \"KalimantanUtara\"\n        },\n        {\n            \"name\": \"KARAWANG\"\n        },\n        {\n            \"name\": \"Karawang\"\n        },\n        {\n            \"name\": \"KARO\"\n        },\n        {\n            \"name\": \"Kec.SawahBesar,KotaAdm.JakartaPusat\"\n        },\n        {\n            \"name\": \"Kediri\"\n        },\n        {\n            \"name\": \"Kendari\"\n        },\n        {\n            \"name\": \"KEPULAUANBANGKABELITUNG\"\n        },\n        {\n            \"name\": \"KepulauanRiau\"\n        },\n        {\n            \"name\": \"KLATEN\"\n        },\n        {\n            \"name\": \"Kolaka\"\n        },\n        {\n            \"name\": \"KotaAdm.JakartaPusat\"\n        },\n        {\n            \"name\": \"KotaAmbon\"\n        },\n        {\n            \"name\": \"KOTABANDAACEH,ACEH\"\n        },\n        {\n            \"name\": \"KOTABIMA\"\n        },\n        {\n            \"name\": \"KotaGarut\"\n        },\n        {\n            \"name\": \"KotaJambi\"\n        },\n        {\n            \"name\": \"KotaKupang\"\n        },\n        {\n            \"name\": \"KotaManado\"\n        },\n        {\n            \"name\": \"KotaPadang,SumateraBarat\"\n        },\n        {\n            \"name\": \"KotaPalopo\"\n        },\n        {\n            \"name\": \"KotaSurabaya\"\n        },\n        {\n            \"name\": \"KotamadyaCirebon\"\n        },\n        {\n            \"name\": \"KUDUS\"\n        },\n        {\n            \"name\": \"Kuningan\"\n        },\n        {\n            \"name\": \"KUNINGAN\"\n        },\n        {\n            \"name\": \"Kupang\"\n        },\n        {\n            \"name\": \"Kutoarjo\"\n        },\n        {\n            \"name\": \"Kuwu\"\n        },\n        {\n            \"name\": \"LabuanBajo,NusaTenggaraTimur\"\n        },\n        {\n            \"name\": \"LABUHANBATU\"\n        },\n        {\n            \"name\": \"LAMONGAN\"\n        },\n        {\n            \"name\": \"Lampung\"\n        },\n        {\n            \"name\": \"LOMBOK\"\n        },\n        {\n            \"name\": \"LUMAJANG\"\n        },\n        {\n            \"name\": \"Luwuk\"\n        },\n        {\n            \"name\": \"LUWUK\"\n        },\n        {\n            \"name\": \"MADURA\"\n        },\n        {\n            \"name\": \"Makassar\"\n        },\n        {\n            \"name\": \"Malang\"\n        },\n        {\n            \"name\": \"MALANG\"\n        },\n        {\n            \"name\": \"Maluku\"\n        },\n        {\n            \"name\": \"MalukuUtara\"\n        },\n        {\n            \"name\": \"Mamuju\"\n        },\n        {\n            \"name\": \"Manado\"\n        },\n        {\n            \"name\": \"Manokwari\"\n        },\n        {\n            \"name\": \"MATARAM\"\n        },\n        {\n            \"name\": \"Medan\"\n        },\n        {\n            \"name\": \"Merauke\"\n        },\n        {\n            \"name\": \"Meulaboh\"\n        },\n        {\n            \"name\": \"Mojokerto\"\n        },\n        {\n            \"name\": \"MuaraEnim\"\n        },\n        {\n            \"name\": \"Nganjuk\"\n        },\n        {\n            \"name\": \"NusaTenggaraBarat\"\n        },\n        {\n            \"name\": \"NusaTenggaraTimur\"\n        },\n        {\n            \"name\": \"Padang\"\n        },\n        {\n            \"name\": \"PADANGSIDIMPUAN\"\n        },\n        {\n            \"name\": \"PADARNI,MANOKWARIBARAT,PAPUA.\"\n        },\n        {\n            \"name\": \"PagarAlam\"\n        },\n        {\n            \"name\": \"PagarAlam\"\n        },\n        {\n            \"name\": \"Palangkaraya\"\n        },\n        {\n            \"name\": \"Palembang\"\n        },\n        {\n            \"name\": \"PALOPO\"\n        },\n        {\n            \"name\": \"PALU,SULAWESITENGAH\"\n        },\n        {\n            \"name\": \"Palu,SulawesiTengah\"\n        },\n        {\n            \"name\": \"Pangkajene\"\n        },\n        {\n            \"name\": \"PangkalPinang\"\n        },\n        {\n            \"name\": \"Papua\"\n        },\n        {\n            \"name\": \"PapuaBarat\"\n        },\n        {\n            \"name\": \"Parakan\"\n        },\n        {\n            \"name\": \"Pare-Pare\"\n        },\n        {\n            \"name\": \"PASAMANBARAT\"\n        },\n        {\n            \"name\": \"Pasuruan\"\n        },\n        {\n            \"name\": \"Pati\"\n        },\n        {\n            \"name\": \"PEKALONGAN\"\n        },\n        {\n            \"name\": \"Pekanbaru\"\n        },\n        {\n            \"name\": \"Pemalang\"\n        },\n        {\n            \"name\": \"PematangSiantar\"\n        },\n        {\n            \"name\": \"PEMATANGSIANTAR\"\n        },\n        {\n            \"name\": \"POLEWALI\"\n        },\n        {\n            \"name\": \"POLEWALIMANDAR\"\n        },\n        {\n            \"name\": \"Ponorogo\"\n        },\n        {\n            \"name\": \"Pontianak\"\n        },\n        {\n            \"name\": \"Prabumulih\"\n        },\n        {\n            \"name\": \"Probolinggo\"\n        },\n        {\n            \"name\": \"Purwodadi\"\n        },\n        {\n            \"name\": \"Purwokerto\"\n        },\n        {\n            \"name\": \"RANTAUPRAPAT\"\n        },\n        {\n            \"name\": \"Riau\"\n        },\n        {\n            \"name\": \"Samarinda\"\n        },\n        {\n            \"name\": \"Samarinda1\"\n        },\n        {\n            \"name\": \"Semarang\"\n        },\n        {\n            \"name\": \"SENGKANG\"\n        },\n        {\n            \"name\": \"Sibolga\"\n        },\n        {\n            \"name\": \"SIDAREJA\"\n        },\n        {\n            \"name\": \"SidenrengRappang\"\n        },\n        {\n            \"name\": \"Sidoarjo\"\n        },\n        {\n            \"name\": \"SingaranPati,KotaBengkulu\"\n        },\n        {\n            \"name\": \"Sinjai\"\n        },\n        {\n            \"name\": \"SITUBONDO\"\n        },\n        {\n            \"name\": \"Solo\"\n        },\n        {\n            \"name\": \"Solok\"\n        },\n        {\n            \"name\": \"Sorong\"\n        },\n        {\n            \"name\": \"Sragen\"\n        },\n        {\n            \"name\": \"Subang\"\n        },\n        {\n            \"name\": \"SUBANG\"\n        },\n        {\n            \"name\": \"SUKABUMI\"\n        },\n        {\n            \"name\": \"SulawesiBarat\"\n        },\n        {\n            \"name\": \"SulawesiSelatan\"\n        },\n        {\n            \"name\": \"SulawesiTengah\"\n        },\n        {\n            \"name\": \"SulawesiTenggara\"\n        },\n        {\n            \"name\": \"SulawesiUtara\"\n        },\n        {\n            \"name\": \"Sumatera\"\n        },\n        {\n            \"name\": \"SumateraBarat\"\n        },\n        {\n            \"name\": \"SumateraSelatan\"\n        },\n        {\n            \"name\": \"SumateraUtara\"\n        },\n        {\n            \"name\": \"Sumbawa\"\n        },\n        {\n            \"name\": \"Sumedang\"\n        },\n        {\n            \"name\": \"Surabaya\"\n        },\n        {\n            \"name\": \"Tangerang\"\n        },\n        {\n            \"name\": \"TANGERANG\"\n        },\n        {\n            \"name\": \"TanjungPinang\"\n        },\n        {\n            \"name\": \"TarakanTimur,KalimantanUtara.\"\n        },\n        {\n            \"name\": \"Tasikmalaya\"\n        },\n        {\n            \"name\": \"TebingTinggi\"\n        },\n        {\n            \"name\": \"Tegal\"\n        },\n        {\n            \"name\": \"TEGAL\"\n        },\n        {\n            \"name\": \"Ternate\"\n        },\n        {\n            \"name\": \"TernateTengah\"\n        },\n        {\n            \"name\": \"Ternate,MalukuUtara\"\n        },\n        {\n            \"name\": \"Timika\"\n        },\n        {\n            \"name\": \"Tomoni\"\n        },\n        {\n            \"name\": \"TonggalanKlatenTengah\"\n        },\n        {\n            \"name\": \"Tuban\"\n        },\n        {\n            \"name\": \"Tulungagung\"\n        },\n        {\n            \"name\": \"WAJO\"\n        },\n        {\n            \"name\": \"Watampone\"\n        },\n        {\n            \"name\": \"Wonosobo\"\n        },\n        {\n            \"name\": \"WreguKulonKota,Kab.KudusJawaTengah\"\n        },\n        {\n            \"name\": \"Yogyakarta\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Dealer Input",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"material_number\": [\n        \"000000000000100500\",\n        \"000000000000100385\",\n        \"000000000000100505\",\n        \"000000000000100004\",\n        \"000000000000100004\"\n    ],\n    \"material_description\": [\n        \"BF20DK2-LH-3-NHB14\",\n        \"BF20DK2-LH-L-NHB14\",\n        \"BF90DK5-XR-T3-NHB14\",\n        \"UM616K3-EB-E-NH192\",\n        \"UM616K3-EB-E-NH192\"\n    ],\n    \"material_group\": [\n        \"002\",\n        \"002\",\n        \"002\",\n        \"004\",\n        \"004\"\n    ],\n    \"maxs_stock\": [\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\"\n    ],\n    \"ship\": [\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\"\n    ],\n    \"retail\": [\n        \"-40\",\n        \"-32\",\n        \"-42\",\n        \"-40\",\n        \"-41\"\n    ],\n    \"end_month_stock_store\": [\n        \"299\",\n        \"11\",\n        \"10\",\n        \"10\",\n        \"10\"\n    ],\n    \"end_month_stock_warehouse\": [\n        \"10\",\n        \"10\",\n        \"12\",\n        \"10\",\n        \"10\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://api1.dcs-hppi.co.id/api/dealer-material-dealer/001000032/72",
+					"protocol": "http",
+					"host": [
+						"api1",
+						"dcs-hppi",
+						"co",
+						"id"
+					],
+					"path": [
+						"api",
+						"dealer-material-dealer",
+						"001000032",
+						"72"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Error response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"material_number\": [\n        \"000000000000100500\",\n        \"000000000000100385\",\n        \"000000000000100505\",\n        \"000000000000100004\",\n        \"000000000000100004\"\n    ],\n    \"material_description\": [\n        \"BF20DK2-LH-3-NHB14\",\n        \"BF20DK2-LH-L-NHB14\",\n        \"BF90DK5-XR-T3-NHB14\",\n        \"UM616K3-EB-E-NH192\",\n        \"UM616K3-EB-E-NH192\"\n    ],\n    \"material_group\": [\n        \"002\",\n        \"002\",\n        \"002\",\n        \"004\",\n        \"004\"\n    ],\n    \"maxs_stock\": [\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\"\n    ],\n    \"ship\": [\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\"\n    ],\n    \"retail\": [\n        \"-40\",\n        \"-32\",\n        \"-42\",\n        \"-40\",\n        \"-41\"\n    ],\n    \"end_month_stock_store\": [\n        \"299\",\n        \"11\",\n        \"10\",\n        \"10\",\n        \"10\"\n    ],\n    \"end_month_stock_warehouse\": [\n        \"10\",\n        \"10\",\n        \"12\",\n        \"10\",\n        \"10\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://api1.dcs-hppi.co.id/api/dealer-material-dealer/0010000042432/723",
+							"protocol": "http",
+							"host": [
+								"api1",
+								"dcs-hppi",
+								"co",
+								"id"
+							],
+							"path": [
+								"api",
+								"dealer-material-dealer",
+								"0010000042432",
+								"723"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.12.2",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"type": "text"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.26",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 31 Oct 2023 02:40:19 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": false,\n    \"message\": \"Error Submit\",\n    \"tersumbit\": 5\n}"
+				},
+				{
+					"name": "Success Response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"material_number\": [\n        \"000000000000100500\",\n        \"000000000000100385\",\n        \"000000000000100505\",\n        \"000000000000100004\",\n        \"000000000000100004\"\n    ],\n    \"material_description\": [\n        \"BF20DK2-LH-3-NHB14\",\n        \"BF20DK2-LH-L-NHB14\",\n        \"BF90DK5-XR-T3-NHB14\",\n        \"UM616K3-EB-E-NH192\",\n        \"UM616K3-EB-E-NH192\"\n    ],\n    \"material_group\": [\n        \"002\",\n        \"002\",\n        \"002\",\n        \"004\",\n        \"004\"\n    ],\n    \"maxs_stock\": [\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\"\n    ],\n    \"ship\": [\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\",\n        \"0\"\n    ],\n    \"retail\": [\n        \"-40\",\n        \"-32\",\n        \"-42\",\n        \"-40\",\n        \"-41\"\n    ],\n    \"end_month_stock_store\": [\n        \"299\",\n        \"11\",\n        \"10\",\n        \"10\",\n        \"10\"\n    ],\n    \"end_month_stock_warehouse\": [\n        \"10\",\n        \"10\",\n        \"12\",\n        \"10\",\n        \"10\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://api1.dcs-hppi.co.id/api/dealer-material-dealer/001000032/72",
+							"protocol": "http",
+							"host": [
+								"api1",
+								"dcs-hppi",
+								"co",
+								"id"
+							],
+							"path": [
+								"api",
+								"dealer-material-dealer",
+								"001000032",
+								"72"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "JSON",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.12.2",
+							"type": "text"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"type": "text"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"type": "text"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"type": "text"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.26",
+							"type": "text"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"type": "text"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private",
+							"type": "text"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 31 Oct 2023 02:41:22 GMT",
+							"type": "text"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Stock Has Been Submited\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "LOCAL",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		},
+		{
+			"key": "URL_STAGING",
+			"value": "https://api1.dcs-hppi.co.id",
+			"type": "string"
+		},
+		{
+			"key": "URL_PROD",
+			"value": "https://api.dcs-hppi.co.id",
+			"type": "string"
+		}
+	]
+}
